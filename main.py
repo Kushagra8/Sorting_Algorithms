@@ -89,8 +89,35 @@ def quick_sort(arr, low, high):
         quick_sort(arr, pi + 1, high)
     return arr
 
-# test the sorting algorithms
-arr = [64, 34, 25, 12, 22, 11, 90]
-print("Selection Sort: ", selection_sort(arr))
-print("Bubble Sort: ", bubble_sort(arr))
-print("Insertion Sort: ", insertion_sort(arr))
+
+def test_sorting_algorithms():
+    arr = [64, 25, 12, 22, 11]
+    assert selection_sort(arr) == [11, 12, 22, 25, 64]
+    assert bubble_sort(arr) == [11, 12, 22, 25, 64]
+    assert insertion_sort(arr) == [11, 12, 22, 25, 64]
+    assert merge_sort(arr) == [11, 12, 22, 25, 64]
+    assert quick_sort(arr) == [11, 12, 22, 25, 64]
+
+    arr = [1, 2, 3, 4, 5]
+    assert selection_sort(arr) == [1, 2, 3, 4, 5]
+    assert bubble_sort(arr) == [1, 2, 3, 4, 5]
+    assert insertion_sort(arr) == [1, 2, 3, 4, 5]
+    assert merge_sort(arr) == [1, 2, 3, 4, 5]
+    assert quick_sort(arr) == [1, 2, 3, 4, 5]
+
+    arr = [5, 4, 3, 2, 1]
+    assert selection_sort(arr) == [1, 2, 3, 4, 5]
+    assert bubble_sort(arr) == [1, 2, 3, 4, 5]
+    assert insertion_sort(arr) == [1, 2, 3, 4, 5]
+    assert merge_sort(arr) == [1, 2, 3, 4, 5]
+    assert quick_sort(arr) == [1, 2, 3, 4, 5]
+
+    arr = [1]
+    assert selection_sort(arr) == [1]
+    assert bubble_sort(arr) == [1]
+    assert insertion_sort(arr) == [1]
+    assert merge_sort(arr) == [1]
+    assert quick_sort(arr) == [1]
+
+
+test_sorting_algorithms()
