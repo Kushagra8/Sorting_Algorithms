@@ -1,4 +1,4 @@
-This code takes an array of numbers as input and returns the sorted array for each sorting algorithm. The algorithms are implemented as functions that take an array as input and return the sorted array.
+This project explores various sorting algorithms implemented in Python. Sorting algorithms are fundamental in computer science and are used to organize data efficiently. This project demonstrates different sorting techniques and their performance. The code takes an array of numbers as input and returns the sorted array for each sorting algorithm. The algorithms are implemented as functions that take an array as input and return the sorted array.
 
 Selection Sort:
 Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element from the unsorted part of the array and swapping it with the first element of the unsorted part. The process is repeated until all the elements are sorted. It has a time complexity of O(n^2) in the worst-case scenario, making it inefficient for large arrays.
