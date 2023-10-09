@@ -1,16 +1,22 @@
 This project explores various sorting algorithms implemented in Python. Sorting algorithms are fundamental in computer science and are used to organize data efficiently. This project demonstrates different sorting techniques and their performance. The code takes an array of numbers as input and returns the sorted array for each sorting algorithm. The algorithms are implemented as functions that take an array as input and return the sorted array.
 
-Selection Sort:
-Selection sort is a simple sorting algorithm that works by repeatedly finding the minimum element from the unsorted part of the array and swapping it with the first element of the unsorted part. The process is repeated until all the elements are sorted. It has a time complexity of O(n^2) in the worst-case scenario, making it inefficient for large arrays.
+Selection Sort
+Description: Selection sort is a straightforward sorting algorithm that repeatedly locates the minimum element within an unsorted section of an array and swaps it with the first element in that section. This process continues until the entire array is sorted.
+Efficiency: While effective for small arrays, selection sort exhibits a time complexity of O(n^2) in the worst-case scenario, making it less efficient for larger datasets.
 
-Bubble Sort:
-Bubble sort is also a simple sorting algorithm that works by repeatedly swapping adjacent elements if they are in the wrong order until the entire array is sorted. It compares each pair of adjacent elements and swaps them if they are in the wrong order. The process is repeated until no swaps are required, indicating that the array is sorted. The time complexity of bubble sort is also O(n^2) in the worst-case scenario, making it inefficient for large arrays.
+Bubble Sort
+Description: Bubble sort is a simple sorting algorithm that iteratively compares adjacent elements and swaps them if they are out of order until the entire array is sorted. The process continues until no more swaps are required.
+Efficiency: Bubble sort also has a time complexity of O(n^2) in the worst-case scenario, making it best suited for smaller arrays or educational purposes.
 
-Insertion Sort:
-Insertion sort is a another simple sorting algorithm that builds the final sorted array one item at a time. It is much more efficient than the previous two algorithms for smaller arrays and partially sorted arrays. The algorithm works by assuming that the first element of the array is sorted and then inserting the next unsorted element into its correct position in the sorted part of the array. The time complexity of insertion sort is O(n^2) in the worst-case scenario, but it is O(n) in the best-case scenario when the array is already sorted.
+Insertion Sort
+Description: Insertion sort constructs the final sorted array incrementally, one element at a time. It starts by assuming the first element is sorted and inserts subsequent unsorted elements into their proper positions within the sorted part of the array.
+Efficiency: While insertion sort has a worst-case time complexity of O(n^2), it excels for small arrays and nearly sorted data, where it achieves a best-case time complexity of O(n).
 
-Merge Sort:
-Merge sort is a divide and conquer algorithm for sorting arrays. The basic idea behind the algorithm is to divide the array into two halves, sort each half recursively, and then merge the two sorted halves back into a single sorted array. The merging process is done by comparing the first element of each subarray and taking the smaller one, repeating the process until both subarrays are merged. The time complexity of merge sort is O(n log n) in the average and worst-case scenarios, making it more efficient than selection sort and bubble sort for large arrays.
+Merge Sort
+Description: Merge sort is a divide-and-conquer algorithm that splits an array into two halves, sorts each half independently, and then merges them back into a single sorted array. The merging process involves comparing elements from both halves and merging them in ascending order.
+Efficiency: Merge sort boasts a favorable average and worst-case time complexity of O(n log n), making it efficient for sorting large arrays.
 
-Quick Sort:
-Quick sort is also a divide and conquer algorithm for sorting arrays. It works by selecting a pivot element from the array and partitioning the other elements into two subarrays, according to whether they are less than or greater than the pivot. The subarrays are then sorted recursively. The pivot selection and partitioning processes result in a well-balanced distribution of elements, leading to efficient sorting. The time complexity of quick sort is O(n log n) in the average case, but it can be as slow as O(n^2) in the worst-case scenario, when the pivot is always the largest or smallest element. To avoid the worst-case scenario, a random pivot selection or a pivot selection algorithm that guarantees a balanced distribution is used in practice.
+Quick Sort
+Description: Quick sort is a divide-and-conquer algorithm that selects a pivot element, partitions the array into subarrays based on the pivot, and recursively sorts the subarrays. It's known for its efficient average-case performance.
+Efficiency: Quick sort typically exhibits an average-case time complexity of O(n log n). However, in rare worst-case scenarios, it can degrade to O(n^2). Techniques like random pivot selection or ensuring balanced partitioning are used to mitigate the worst-case performance.
+These concise descriptions can be included in your resume to highlight your knowledge of sorting algorithms and your ability to analyze their efficiency.
